@@ -26,12 +26,17 @@ The XML file is used to define the user interface in XAML syntax,  while all  th
 - XAML provides basic UI elements (such as Pages, Layouts and Controls) that are native on each platform, keeping the interface clean and simple.
 
 
+## Xamarin Forms
+Xamarin.Forms is a namespace that works directly on Xamarin is “a natively-backed UI toolkit abstraction” and allows XAML user interface development, which  is  a  better  alternative  than  using  native  Xamarin  interface as it is a mark-up language.
+
 ## Setup
 
 #### Prerequisites
 - as Xamarin development is possible only using an Xamarin-compatible IDE, this project will be created in [Visual Studio](https://www.visualstudio.com/).
-    - keep in mind that you can also use [Xamarin Studio](https://developer.xamarin.com/guides/cross-platform/xamarin-studio/) but all the modules will have instructions available for Visual Studio only.
+    - keep in mind that you can also use [Xamarin Studio](https://developer.xamarin.com/guides/cross-platform/xamarin-studio/) but all the modules in this course will have instructions available for Visual Studio only.
 
-1. Open Visual Studio and create a new Project - a __Cross Platform App (Xamarin)__.
+1. Open Visual Studio and create a new Project - a __Cross Platform App (Xamarin)__, choose **Blank App** and **Xamarin Forms** and also use **Portable Class Library (PCL)** as Code Sharing Strategy.
+
 ![New project](https://github.com/microsoft-dx/xamarin-fundamentals-ui/blob/master/Images/new-project.PNG?raw=true)
+
 2. 
