@@ -1,1 +1,2 @@
 # User Interface elements
+Because a mobile application can have so many features and actions taken cared of, it is important to be able to add special designed elements for each action to improve user experience: for instance, to navigate to the previous page the user would expect a button on the left side of the application because this is consistent with turning left to go back to one previous place - therefore, it is expected. No user would think a toogle would take him or her back to the previous page, just like no one will think an image will expect an input.
