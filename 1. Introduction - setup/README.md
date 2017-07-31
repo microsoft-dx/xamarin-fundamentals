@@ -10,7 +10,7 @@ This is what this module intends to focus on.
 ## Cross platform applications
 A cross-platform application is a mobile application that can be used on each mobile opperating system - Android, iOS or UWP - having the same results on each platform but by using the native elements from each platform.
 For example, lets have a look at these text entries:
-![Code Example](https://code.visualstudio.com/images/xamarin-entry.png)
+![Code Example](https://github.com/microsoft-dx/xamarin-fundamentals-ui/blob/master/Images/xamarin-entry.png?raw=true)
 
 Xamarin provides the developer the possibility of creating a cross-platform Visual Studio project that builds the application for each used platform.
 
