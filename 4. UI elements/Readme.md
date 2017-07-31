@@ -23,3 +23,12 @@ A button has three main properties that need to be set in order to implement a f
 - an ID (using the Name property), just like all other elements;
 - either a name or an icon, so the user understand what does the button do;
 - a [clicked event handler](https://developer.xamarin.com/api/type/Xamarin.Forms.Button/) which is a method implemented in the back-end which will be disscused in the Back-end part of this course.
+
+## ListView
+In this application's case, a very important element is the actual shopping items list, which was created using a [ListView](https://developer.xamarin.com/guides/xamarin-forms/user-interface/listview/) which is a list of cells - cells containing text and/or icons or other elements.
+
+## Icons
+Though are not a specific element used in Xamarin Forms mobile development, icons are used (and have been in this course, too) used to give an image to buttons or ListViews and therefore need a mention.
+When using Visual Studio, all the elements need to be added in the project - images, too - and as all used icons are present as images those were added on all the drawable dimensions.
+The Resource drawable folders are named this way because a version of the icon is needed for all sizes of the mobile devices, there fore the specific icon needs to be included in the proejects files on all mobile platforms, just like below:
+<p align="center"><img height="350" alt="Icons" src="https://github.com/microsoft-dx/xamarin-fundamentals-ui/blob/master/Images/android-icons.PNG?raw=true" margin=auto></p>
