@@ -3,7 +3,7 @@ Because a mobile application can have so many features and actions taken cared o
 
 ## Buttons
 _What does this button do?_
-<p align="center"><img height="450" alt="But-buttons" src="https://github.com/microsoft-dx/xamarin-fundamentals-ui/blob/master/Images/buttons.png?raw=true" margin=auto></p>
+<p align="center"><img alt="But-buttons" src="https://github.com/microsoft-dx/xamarin-fundamentals-ui/blob/master/Images/buttons.png?raw=true" margin=auto></p>
 [Image source](https://codepen.io/g13nn/pen/yqiDG/image/large.png)
 Ever sincer Dexter's sister Dee Dee started pushing buttons in her brother's laboratory, people started to _experience_ pushing buttons, having already in their subconscious that something would (or at least should) happen.
 
