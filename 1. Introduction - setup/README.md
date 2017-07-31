@@ -32,5 +32,6 @@ The XML file is used to define the user interface in XAML syntax,  while all  th
 - as Xamarin development is possible only using an Xamarin-compatible IDE, this project will be created in [Visual Studio](https://www.visualstudio.com/).
     - keep in mind that you can also use [Xamarin Studio](https://developer.xamarin.com/guides/cross-platform/xamarin-studio/) but all the modules will have instructions available for Visual Studio only.
 
-  1. Create a new Pro
-  2. 
+1. Open Visual Studio and create a new Project - a __Cross Platform App (Xamarin)__.
+![New project](https://github.com/microsoft-dx/xamarin-fundamentals-ui/blob/master/Images/new-project.PNG?raw=true)
+2. 
