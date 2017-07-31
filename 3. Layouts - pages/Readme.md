@@ -8,6 +8,35 @@ From all the available layouts, more often used are:
   - vertical: aligning the elements from the upper side of the screen to the lower side, in the exact order they are added in the layout. 
   - horizontal: in which the elements are being aligned from left to right also in the same order from the layout.
 
+### Current application's structure:
+```
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:MobileDemo"
+             x:Class="MobileDemo.MainPage"
+             BackgroundColor="WhiteSmoke">
+    <!--This layout contains content elements, like lists and text views-->
+    <StackLayout
+        x:Name="content"
+        Orientation="Vertical"
+        MinimumHeightRequest="600"
+        MinimumWidthRequest="200"
+        BackgroundColor="Transparent">
+    </StackLayout>
+    
+    <!--This is a layout which will contain action elements like buttons-->
+    <StackLayout
+        x:Name="actions"
+        Orientation="Vertical">
+    </StackLayout>
+</ContentPage>
+```
+Notice that two StackLayouts are used for the two main parts of the page:
+- the **content StackLayout** (the x:Name sets the Name property of the current object - see "x" as "this"); this part will contain data display.
+- the **action StackLayout** will hold elements that will take an action on the data.
+
+
 ## Application's pages
 A mobile application can have one or more [pages](https://developer.xamarin.com/guides/xamarin-forms/user-interface/controls/pages/) - these depend on the complexity of the application but also on the desired user experience. Considering this, pages can be of multiple types, among which worth mentioning:
 - [Content pages](https://developer.xamarin.com/api/type/Xamarin.Forms.ContentPage/) - basic content-like page which allows elements to be oriented by the suer.
