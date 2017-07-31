@@ -8,12 +8,59 @@ From all the available layouts, more often used are:
   - vertical: aligning the elements from the upper side of the screen to the lower side, in the exact order they are added in the layout. 
   - horizontal: in which the elements are being aligned from left to right also in the same order from the layout.
 
+### Current application's structure:
+```
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:MobileDemo"
+             x:Class="MobileDemo.MainPage"
+             BackgroundColor="WhiteSmoke">
+    <!--This layout contains content elements, like lists and text views-->
+    <StackLayout
+        x:Name="content"
+        Orientation="Vertical"
+        MinimumHeightRequest="600"
+        MinimumWidthRequest="200"
+        BackgroundColor="Transparent">
+    </StackLayout>
+    
+    <!--This is a layout which will contain action elements like buttons-->
+    <StackLayout
+        x:Name="actions"
+        Orientation="Vertical">
+    </StackLayout>
+</ContentPage>
+```
+Notice that two StackLayouts are used for the two main parts of the page:
+- the **content StackLayout** (the x:Name sets the Name property of the current object - see "x" as "this"); this part will contain data display.
+- the **action StackLayout** will hold elements that will take an action on the data.
+
+
+### Multiple layouts
+Note that it is not necessary to have only one layout in a page - remember, a page is not a layout. Therefore, you can add as many layouts as you need and of as many types as you want. For example, here we have a StackLayout that contains one other StackLayout (which also hold 3 other StackLayouts) and another TemplateView.
+<p align="center"><img height="300" alt="Crazy layouts" src="https://github.com/microsoft-dx/xamarin-fundamentals-ui/blob/master/Images/layouts.png?raw=true" margin=auto></p>
+
+
 ## Application's pages
 A mobile application can have one or more [pages](https://developer.xamarin.com/guides/xamarin-forms/user-interface/controls/pages/) - these depend on the complexity of the application but also on the desired user experience. Considering this, pages can be of multiple types, among which worth mentioning:
 - [Content pages](https://developer.xamarin.com/api/type/Xamarin.Forms.ContentPage/) - basic content-like page which allows elements to be oriented by the suer.
 - [Navigation pages](https://developer.xamarin.com/api/type/Xamarin.Forms.NavigationPage/) which allow each device's native workflow (sliding on Windows Phone and Android or buttons navigation on iOS - see Whatsapp, for example).
 
 
-### Multiple layouts
-Note that it is not necessary to have only one layout in a page - remember, a page is not a layout. Therefore, you can add as many layouts as you need and of as many types as you want. For example, here we have a StackLayout that contains one other StackLayout (which also hold 3 other StackLayouts) and another TemplateView.
-<p align="center"><img height="300" alt="Crazy layouts" src="https://github.com/microsoft-dx/xamarin-fundamentals-ui/blob/master/Images/layouts.png?raw=true" margin=auto></p>
+## Navigation through pages
+To create the navigation between the pages, first of all the pages _need to be added in the project_.
+As the App page and the MainPage are already added in the project, to add elements to the MainPage we only need to edit the xaml file MainPage.xaml and add elements to it, such as the two StackLayouts added in the current solution.
+Further, to add a new page we have to right-click on the Portable solution of the project and add a new ContentPage to the solution:
+<p align="center"><img height="500" alt="New page" src="https://github.com/microsoft-dx/xamarin-fundamentals-ui/blob/master/Images/new-page.png?raw=true" margin=auto></p>
+
+As a shopping list application needs to allow adding a new item to the shopping list, the most clean way of doing that action is by having another page for the data input of the new item being added to the shopping list.
+Make sure to add a new xaml **Content Page** because this type of page already has a C# file behind it added to the project at the same time:
+
+<p align="center"><img height="450" alt="New page" src="https://github.com/microsoft-dx/xamarin-fundamentals-ui/blob/master/Images/new-item.PNG?raw=true" margin=auto></p>
+
+The C# file (extensioned .cs) is the back-end implementation of this current page and this part will be covered in tomorrow's Xamarin Forms Back-end part session.
+
+
+### Your turn
+What do you think should this page's scheleton be? A StackLayout or maybe a GridLayout? Have a discussion about this with the instructor.
