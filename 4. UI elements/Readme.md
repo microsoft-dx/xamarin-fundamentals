@@ -12,3 +12,14 @@ Ever sincer Dexter's sister Dee Dee started pushing buttons in her brother's lab
 In terms of mobile applications, buttons are used generally to submit or enter data - any user would first complete some text entries and push a button after, expecting for that data to be added.
 
 In the shopping list application, it was previously mentioned that the MainPage consist of two parts, the content and the action part. In the action part, a button is added to allow the user to add a new element to the list - add a suggestive icon to that button and you come up good user experience.
+```
+<Button 
+    x:Name="addNewItem_button"
+    Image="ic_add_box_black_24dp.png" 
+    Clicked="addNewItem_button_Clicked"/>
+```
+
+A button has three main properties that need to be set in order to implement a functionality:
+- an ID (using the Name property), just like all other elements;
+- either a name or an icon, so the user understand what does the button do;
+- a [clicked event handler](https://developer.xamarin.com/api/type/Xamarin.Forms.Button/) which is a method implemented in the back-end which will be disscused in the Back-end part of this course.
