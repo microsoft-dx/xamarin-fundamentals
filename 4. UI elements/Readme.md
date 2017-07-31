@@ -35,6 +35,7 @@ In this application's case, a very important element is the actual shopping item
 
 As said, a ListView is formed of cells, which can be [ImageCells](https://developer.xamarin.com/guides/xamarin-forms/user-interface/listview/customizing-cell-appearance/#ImageCell), [TextCells](https://developer.xamarin.com/guides/xamarin-forms/user-interface/listview/customizing-cell-appearance/#TextCell) or [CustomCells](https://developer.xamarin.com/guides/xamarin-forms/user-interface/listview/customizing-cell-appearance/#Custom_Cells) that will definately suit each developer's needs. And as it is a native element, each platform has its custom ListView style:
 <p align="center"><img height="200" alt="Icons" src="https://github.com/microsoft-dx/xamarin-fundamentals-ui/blob/master/Images/listview.png?raw=true" margin=auto></p>
+[Image source](https://blog.xamarin.com/wp-content/uploads/2014/06/ListView-With-Monkeys.png)
 
 More details about this will be given tomorrow as the whole implementation of this List needs back-up support.
 
@@ -44,3 +45,5 @@ Though are not a specific element used in Xamarin Forms mobile development, icon
 When using Visual Studio, all the elements need to be added in the project - images, too - and as all used icons are present as images those were added on all the drawable dimensions.
 The Resource drawable folders are named this way because a version of the icon is needed for all sizes of the mobile devices, there fore the specific icon needs to be included in the proejects files on all mobile platforms, just like below:
 <p align="center"><img height="350" alt="Icons" src="https://github.com/microsoft-dx/xamarin-fundamentals-ui/blob/master/Images/android-icons.PNG?raw=true" margin=auto></p>
+
+A great icons website is [material.io](https://material.io/icons/) which also provides icons on various dimensions and formats.
