@@ -24,3 +24,13 @@ With Xamarin development it is really all about productivity and time-efficiency
 The XML file is used to define the user interface in XAML syntax,  while all  the  runtime  behavior  of  the  UI  elements  is  defined  in  C#
 
 - XAML provides basic UI elements (such as Pages, Layouts and Controls) that are native on each platform, keeping the interface clean and simple.
+
+
+## Setup
+
+#### Prerequisites
+- as Xamarin development is possible only using an Xamarin-compatible IDE, this project will be created in [Visual Studio](https://www.visualstudio.com/).
+    - keep in mind that you can also use [Xamarin Studio](https://developer.xamarin.com/guides/cross-platform/xamarin-studio/) but all the modules will have instructions available for Visual Studio only.
+
+  1. Create a new Pro
+  2. 
