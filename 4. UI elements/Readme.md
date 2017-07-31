@@ -14,8 +14,15 @@ In terms of mobile applications, buttons are used generally to submit or enter d
 In the shopping list application, it was previously mentioned that the MainPage consist of two parts, the content and the action part. In the action part, a button is added to allow the user to add a new element to the list - add a suggestive icon to that button and you come up good user experience.
 ```
 <Button 
-   
-    Clicked="addNewItem_button_Clicked"/>
+   x:Name="addNewItem_button"
+   HorizontalOptions="Center" 
+   VerticalOptions="CenterAndExpand" 
+   Margin="0,0,0,10"
+   WidthRequest="48"
+   HeightRequest="48"
+   BackgroundColor="Transparent"
+   Image="ic_add_box_black_48dp.png" 
+   Clicked="addNewItem_button_Clicked"/>
 ```
 
 A button has three main properties that need to be set in order to implement a functionality:
