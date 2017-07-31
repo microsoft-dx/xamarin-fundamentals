@@ -21,3 +21,4 @@ As you can see, all the _business analysis_, _user researchability_ and various 
 
 #### If you are still not sure what is the difference, then please see the bellow real scenario that explains the difference:
 ![UX UI](https://github.com/microsoft-dx/xamarin-fundamentals-ui/blob/master/Images/ux-ui.jpg?raw=true)
+
