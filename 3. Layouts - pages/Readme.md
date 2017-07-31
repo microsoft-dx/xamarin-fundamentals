@@ -37,15 +37,15 @@ Notice that two StackLayouts are used for the two main parts of the page:
 - the **action StackLayout** will hold elements that will take an action on the data.
 
 
+### Multiple layouts
+Note that it is not necessary to have only one layout in a page - remember, a page is not a layout. Therefore, you can add as many layouts as you need and of as many types as you want. For example, here we have a StackLayout that contains one other StackLayout (which also hold 3 other StackLayouts) and another TemplateView.
+<p align="center"><img height="300" alt="Crazy layouts" src="https://github.com/microsoft-dx/xamarin-fundamentals-ui/blob/master/Images/layouts.png?raw=true" margin=auto></p>
+
+
 ## Application's pages
 A mobile application can have one or more [pages](https://developer.xamarin.com/guides/xamarin-forms/user-interface/controls/pages/) - these depend on the complexity of the application but also on the desired user experience. Considering this, pages can be of multiple types, among which worth mentioning:
 - [Content pages](https://developer.xamarin.com/api/type/Xamarin.Forms.ContentPage/) - basic content-like page which allows elements to be oriented by the suer.
 - [Navigation pages](https://developer.xamarin.com/api/type/Xamarin.Forms.NavigationPage/) which allow each device's native workflow (sliding on Windows Phone and Android or buttons navigation on iOS - see Whatsapp, for example).
-
-
-### Multiple layouts
-Note that it is not necessary to have only one layout in a page - remember, a page is not a layout. Therefore, you can add as many layouts as you need and of as many types as you want. For example, here we have a StackLayout that contains one other StackLayout (which also hold 3 other StackLayouts) and another TemplateView.
-<p align="center"><img height="300" alt="Crazy layouts" src="https://github.com/microsoft-dx/xamarin-fundamentals-ui/blob/master/Images/layouts.png?raw=true" margin=auto></p>
 
 
 ## Navigation through pages
