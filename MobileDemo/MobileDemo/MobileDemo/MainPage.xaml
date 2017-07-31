@@ -11,10 +11,27 @@
         MinimumHeightRequest="600"
         MinimumWidthRequest="200"
         BackgroundColor="Transparent">
+        <ListView x:Name="ListViewUser" HeightRequest="400">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ImageCell ImageSource="ic_add_box_black_48dp" Text="lalalala"/>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
     </StackLayout>
     <!--This is a layout which will contain action elements like buttons-->
     <StackLayout
         x:Name="actions"
         Orientation="Vertical">
+        <Button 
+            x:Name="addNewItem_button"
+            HorizontalOptions="Center" 
+            VerticalOptions="CenterAndExpand" 
+            Margin="0,0,0,10"
+            WidthRequest="48"
+            HeightRequest="48"
+            BackgroundColor="Transparent"
+            Image="ic_add_box_black_48dp.png" 
+            Clicked="addNewItem_button_Clicked"/>
     </StackLayout>
 </ContentPage>

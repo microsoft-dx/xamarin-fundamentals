@@ -13,5 +13,9 @@ namespace MobileDemo
         {
             InitializeComponent();
         }
+
+        private void addNewItem_button_Clicked(object sender, EventArgs e)
+        {
+        }
     }
 }
