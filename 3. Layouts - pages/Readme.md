@@ -22,4 +22,5 @@ Note that it is not necessary to have only one layout in a page - remember, a pa
 ## Navigation through pages
 To create the navigation between the pages, first of all the pages _need to be added in the project_.
 As the App page and the MainPage are already added in the project, to add elements to the MainPage we only need to edit the xaml file MainPage.xaml and add elements to it, such as the two StackLayouts added in the current solution.
-Further, to add a new page we have to right-click on the Portable solution of the project 
+Further, to add a new page we have to right-click on the Portable solution of the project and add a new ContentPage to the solution:
+<p align="center"><img height="500" alt="New page" src="https://github.com/microsoft-dx/xamarin-fundamentals-ui/blob/master/Images/new-page.png?raw=true" margin=auto></p>
