@@ -35,6 +35,7 @@ In this application's case, a very important element is the actual shopping item
 
 As said, a ListView is formed of cells, which can be [ImageCells](https://developer.xamarin.com/guides/xamarin-forms/user-interface/listview/customizing-cell-appearance/#ImageCell), [TextCells](https://developer.xamarin.com/guides/xamarin-forms/user-interface/listview/customizing-cell-appearance/#TextCell) or [CustomCells](https://developer.xamarin.com/guides/xamarin-forms/user-interface/listview/customizing-cell-appearance/#Custom_Cells) that will definately suit each developer's needs. And as it is a native element, each platform has its custom ListView style:
 <p align="center"><img height="200" alt="Icons" src="https://github.com/microsoft-dx/xamarin-fundamentals-ui/blob/master/Images/listview.png?raw=true" margin=auto></p>
+
 [Image source](https://blog.xamarin.com/wp-content/uploads/2014/06/ListView-With-Monkeys.png)
 
 More details about this will be given tomorrow as the whole implementation of this List needs back-up support.
