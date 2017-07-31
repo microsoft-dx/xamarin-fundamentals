@@ -1,4 +1,4 @@
-# User Interface elements
+# User Interface native elements
 Because a mobile application can have so many features and actions taken cared of, it is important to be able to add special designed elements for each action to improve user experience: for instance, to navigate to the previous page the user would expect a button on the left side of the application because this is consistent with turning left to go back to one previous place - therefore, it is expected. No user would think a toogle would take him or her back to the previous page, just like no one will think an image will expect an input.
 
 ## Buttons
@@ -47,4 +47,8 @@ When using Visual Studio, all the elements need to be added in the project - ima
 The Resource drawable folders are named this way because a version of the icon is needed for all sizes of the mobile devices, there fore the specific icon needs to be included in the proejects files on all mobile platforms, just like below:
 <p align="center"><img height="350" alt="Icons" src="https://github.com/microsoft-dx/xamarin-fundamentals-ui/blob/master/Images/android-icons.PNG?raw=true" margin=auto></p>
 
-A great icons website is [material.io](https://material.io/icons/) which also provides icons on various dimensions and formats.
+A great icons website is [material.io](https://material.io/icons/) which also provides icons on various dimensions and file formats.
+
+
+### Other native elements
+Of course, there are more native elements provided by Xamarin Forms but they weren't presented in this course as only the elements that were used were detailed. If you want more information about other elements, visit Xamarin Forms' [official page](https://developer.xamarin.com/guides/xamarin-forms/user-interface/controls/).
