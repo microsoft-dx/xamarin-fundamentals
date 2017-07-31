@@ -35,8 +35,9 @@ Xamarin.Forms is a namespace that works directly on Xamarin is “a natively-bac
 - as Xamarin development is possible only using an Xamarin-compatible IDE, this project will be created in [Visual Studio](https://www.visualstudio.com/).
     - keep in mind that you can also use [Xamarin Studio](https://developer.xamarin.com/guides/cross-platform/xamarin-studio/) but all the modules in this course will have instructions available for Visual Studio only.
 
-1. Open Visual Studio and create a new Project - a __Cross Platform App (Xamarin)__, choose **Blank App** and **Xamarin Forms** and also use **Portable Class Library (PCL)** as Code Sharing Strategy.
+1. Open Visual Studio and create a new Project - a , choose 
 
 ![New project](https://github.com/microsoft-dx/xamarin-fundamentals-ui/blob/master/Images/new-project.PNG?raw=true)
 
-2. 
+2. Make sure you create a __Cross Platform App (Xamarin)__ by selecting it.
+3. Have Visual Studio create a **Blank App** using **Xamarin Forms** and also make sure you use **Portable Class Library (PCL)** as Code Sharing Strategy.
