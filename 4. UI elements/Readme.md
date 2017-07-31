@@ -14,8 +14,7 @@ In terms of mobile applications, buttons are used generally to submit or enter d
 In the shopping list application, it was previously mentioned that the MainPage consist of two parts, the content and the action part. In the action part, a button is added to allow the user to add a new element to the list - add a suggestive icon to that button and you come up good user experience.
 ```
 <Button 
-    x:Name="addNewItem_button"
-    Image="ic_add_box_black_24dp.png" 
+   
     Clicked="addNewItem_button_Clicked"/>
 ```
 
@@ -28,6 +27,9 @@ A button has three main properties that need to be set in order to implement a f
 In this application's case, a very important element is the actual shopping items list, which was created using a [ListView](https://developer.xamarin.com/guides/xamarin-forms/user-interface/listview/) which is a list of cells - cells containing text and/or icons or other elements.
 
 As said, a ListView is formed of cells, which can be [ImageCells](https://developer.xamarin.com/guides/xamarin-forms/user-interface/listview/customizing-cell-appearance/#ImageCell), [TextCells](https://developer.xamarin.com/guides/xamarin-forms/user-interface/listview/customizing-cell-appearance/#TextCell) or [CustomCells](https://developer.xamarin.com/guides/xamarin-forms/user-interface/listview/customizing-cell-appearance/#Custom_Cells) that will definately suit each developer's needs.
+
+More details about this will be given tomorrow as the whole implementation of this List needs back-up support.
+
 
 ## Icons
 Though are not a specific element used in Xamarin Forms mobile development, icons are used (and have been in this course, too) used to give an image to buttons or ListViews and therefore need a mention.
