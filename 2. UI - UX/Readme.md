@@ -1,4 +1,4 @@
-This module focuses primerly on what is user intreface and what is the difference between that and user experience.
+This module focuses primerly on what is **user intreface** and what is the difference between that and **user experience**.
 
 ## User interface
 An application is mainly built from __two main parts__: the **back-end** (which holds how the information is being changed in methods and in certain cases) and the **user interface** (that displays the information to the user). Of course, the database is a third part of an application but it is merely integrated in the back-end because it stores data.
@@ -14,6 +14,7 @@ Often people confuse UI with UX - user experience - action that cannot be more w
 
 ### UX vs UI
 The following parallel describes what elements create the user experience and what can be derived from the user interface, also explaining the difference between these two concepts.
+
 ![UX vs UI](https://github.com/microsoft-dx/xamarin-fundamentals-ui/blob/master/Images/ui-vs-ux.jpg?raw=true)
 
-
+As you can see, all the _business analysis_, _user researchability_ and various discovered _scenarios_ come around togheter and define User experience, whereas from the User interfaces can be understood and pointed out elements such as the _visual design_ - how the application is suppose to look like, the _colors_ and _layouts_ (about which we will be talk about in a further module) and what the _graphic designers' work_ is combined for.
