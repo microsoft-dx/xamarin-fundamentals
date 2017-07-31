@@ -7,3 +7,6 @@ From all the available layouts, more often used are:
 - especially important is the [**Stacklayout**](https://developer.xamarin.com/api/type/Xamarin.Forms.StackLayout/) because it provides two kind of orientation of the held elements:
   - vertical: aligning the elements from the upper side of the screen to the lower side, in the exact order they are added in the layout. 
   - horizontal: in which the elements are being aligned from left to right also in the same order from the layout.
+
+### Multiple layouts
+Note that it is not necessary to have only one layout in a page - remember, a page is not a layout. Therefore, you can add as many layouts as you need and of as many types as you want. For example, here we have a StackLayout that contains one other StackLayout, a TemplateView and .
