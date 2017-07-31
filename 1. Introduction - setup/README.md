@@ -1,7 +1,7 @@
 # Module 1: Introduction & Setup
 
 ## Xamarin
-[Xamarin](https://www.xamarin.com/) is a platform based on C# and xaml that allows the user to create **cross-platform applications** using shared-code between.
+[Xamarin](https://www.xamarin.com/) is a platform based on C# and xaml that allows the user to create **cross-platform applications** using shared-code between each platforms's solution.
 
 
 ### How? 
