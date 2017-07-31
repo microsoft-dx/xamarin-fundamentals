@@ -17,3 +17,7 @@ A mobile application can have one or more [pages](https://developer.xamarin.com/
 ### Multiple layouts
 Note that it is not necessary to have only one layout in a page - remember, a page is not a layout. Therefore, you can add as many layouts as you need and of as many types as you want. For example, here we have a StackLayout that contains one other StackLayout (which also hold 3 other StackLayouts) and another TemplateView.
 <p align="center"><img height="300" alt="Crazy layouts" src="https://github.com/microsoft-dx/xamarin-fundamentals-ui/blob/master/Images/layouts.png?raw=true" margin=auto></p>
+
+
+## Navigation through pages
+To create the navigation between the pages, first of all the pages _need to be added in the project_.
