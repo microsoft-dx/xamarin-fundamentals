@@ -25,8 +25,9 @@ As the App page and the MainPage are already added in the project, to add elemen
 Further, to add a new page we have to right-click on the Portable solution of the project and add a new ContentPage to the solution:
 <p align="center"><img height="500" alt="New page" src="https://github.com/microsoft-dx/xamarin-fundamentals-ui/blob/master/Images/new-page.png?raw=true" margin=auto></p>
 
+As a shopping list application needs to allow adding a new item to the shopping list, the most clean way of doing that action is by having another page for the data input of the new item being added to the shopping list.
 Make sure to add a new xaml Content Page because this type of page already has a C# file behind it added to the project at the same time:
 
-<p align="center"><img height="500" alt="New page" src="https://github.com/microsoft-dx/xamarin-fundamentals-ui/blob/master/Images/new-item.PNG?raw=true" margin=auto></p>
+<p align="center"><img height="450" alt="New page" src="https://github.com/microsoft-dx/xamarin-fundamentals-ui/blob/master/Images/new-item.PNG?raw=true" margin=auto></p>
 
 The C# file (extensioned .cs) is the back-end implementation of this current page and this part will be covered in tomorrow's Xamarin Forms Back-end part session.
