@@ -18,3 +18,6 @@ The following parallel describes what elements create the user experience and wh
 ![UX vs UI](https://github.com/microsoft-dx/xamarin-fundamentals-ui/blob/master/Images/ui-vs-ux.jpg?raw=true)
 
 As you can see, all the _business analysis_, _user researchability_ and various discovered _scenarios_ come around togheter and define User experience, whereas from the User interfaces can be understood and pointed out elements such as the _visual design_ - how the application is suppose to look like, the _colors_ and _layouts_ (about which we will be talk about in a further module) and what the _graphic designers' work_ is combined for.
+
+#### If you are still not sure what is the difference, then please see the bellow real scenario that explains the difference:
+![UX UI](https://github.com/microsoft-dx/xamarin-fundamentals-ui/blob/master/Images/ux-ui.jpg?raw=true)
