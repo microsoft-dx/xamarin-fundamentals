@@ -60,3 +60,7 @@ Make sure to add a new xaml **Content Page** because this type of page already h
 <p align="center"><img height="450" alt="New page" src="https://github.com/microsoft-dx/xamarin-fundamentals-ui/blob/master/Images/new-item.PNG?raw=true" margin=auto></p>
 
 The C# file (extensioned .cs) is the back-end implementation of this current page and this part will be covered in tomorrow's Xamarin Forms Back-end part session.
+
+
+### Your turn
+What do you think should this page's scheleton be? A StackLayout or maybe a GridLayout? Have a discussion about this with the instructor.
