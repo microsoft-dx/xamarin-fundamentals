@@ -1,3 +1,4 @@
+## Module 2: UI & UX
 This module focuses primerly on what is **user intreface** and what is the difference between that and **user experience**.
 
 ## User interface
