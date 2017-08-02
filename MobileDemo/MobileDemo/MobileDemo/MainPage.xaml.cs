@@ -16,6 +16,7 @@ namespace MobileDemo
 
         private void addNewItem_button_Clicked(object sender, EventArgs e)
         {
+            Navigation.PushAsync(new NewItem());
         }
     }
 }

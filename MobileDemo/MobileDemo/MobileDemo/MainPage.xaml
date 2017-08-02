@@ -3,7 +3,9 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:MobileDemo"
              x:Class="MobileDemo.MainPage"
-             BackgroundColor="WhiteSmoke">
+             BackgroundColor="WhiteSmoke"
+             Title="This is my shopping list app!">
+    
     <!--This layout contains content elements, like lists and text views-->
     <StackLayout
         x:Name="content"
@@ -19,6 +21,7 @@
             </ListView.ItemTemplate>
         </ListView>
     </StackLayout>
+    
     <!--This is a layout which will contain action elements like buttons-->
     <StackLayout
         x:Name="actions"
