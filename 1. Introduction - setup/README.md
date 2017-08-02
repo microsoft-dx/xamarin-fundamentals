@@ -34,11 +34,11 @@ Xamarin.Forms is a namespace that works directly on Xamarin is “a natively-bac
 ## Setup -- Windows
 First we need to go [here](https://www.visualstudio.com/downloads/) and download the installer for visual studio (this course will use Visual Studio Community). Then, after the download has finished, we click on the installer and select a custom install for Visual Studio (you can also change the location)
 
-![Installer](https://github.com/microsoft-dx/xamarin-fundamentals-ui/blob/master/Images/installer.png?raw=true)
+![Installer](https://github.com/microsoft-dx/xamarin-fundamentals-ui/blob/master/Images/installer.jpg?raw=true)
 
 On the next screen we need to select the Cross Platform Mobile Development section as this is what we will use (Xamarin):
 
-![Installer must have](https://github.com/microsoft-dx/xamarin-fundamentals-ui/blob/master/Images/installer-must-have.png?raw=true)
+![Installer must have](https://github.com/microsoft-dx/xamarin-fundamentals-ui/blob/master/Images/installer-must-have.jpg?raw=true)
 
 After this we are good to go and the install will begin and the Wait Begins (depending on your internet connection and you SSD/HDD it should take some time. I grabbed a beer, started two benchmark virtual machines and the installer finished in 4.5h on a HDD and 45 minutes on the SSD).
 
@@ -64,7 +64,7 @@ As you can see, the are many subsections as it follows:
 3. MobileDemo.iOS containing all the files Required for iOS's side of the App. 
 4. MobileDemo.UWP, explained in [this blog post](https://laurentiu.microsoft.pub.ro/2016/04/03/hello-universal-windows-platform/)
 
-![Solution explorer](https://github.com/microsoft-dx/xamarin-fundamentals-ui/blob/master/Images/solution_explorer.png?raw=true)
+![Solution explorer](https://github.com/microsoft-dx/xamarin-fundamentals-ui/blob/master/Images/solution_explorer.PNG?raw=true)
 
 We will set the UWP project as the default executing project and hit F5. We now created our first Xamarin PCL application.
 
@@ -78,4 +78,5 @@ As you may have already observed, there is basicaly no need for C# coding knowle
 
 #### Useful links:
 [Xamarin for Developers](https://developer.xamarin.com/)
+
 [Video Tutorial for Beginers](https://www.youtube.com/watch?v=6MQXkUfIn9M)
