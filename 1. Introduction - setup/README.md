@@ -12,6 +12,8 @@ A cross-platform application is a mobile application that can be used on each mo
 For example, lets have a look at these text entries:
 ![Code Example](https://github.com/microsoft-dx/xamarin-fundamentals-ui/blob/master/Images/xamarin-entry.png?raw=true)
 
+[Image source](http://ammras.elmapharmamarketing.in/content/images/pages/forms/example-app.png)
+
 As you can notice, these elements have the exact same behaviour and data expected, yet still they are different on each platform and are exactly the same as you have previously seen in other applications' text entries on either one of those platforms.
 
 Xamarin provides the developer the possibility of creating a cross-platform Visual Studio project that builds the application for each used platform.
