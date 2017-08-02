@@ -13,7 +13,7 @@ namespace MobileDemo
         {
             InitializeComponent();
 
-            MainPage = new MobileDemo.MainPage();
+            MainPage = new NavigationPage(new MobileDemo.MainPage());
         }
 
         protected override void OnStart()

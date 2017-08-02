@@ -5,7 +5,7 @@
              x:Class="MobileDemo.MainPage"
              BackgroundColor="WhiteSmoke"
              Title="This is my shopping list app!">
-    
+
     <!--This layout contains content elements, like lists and text views-->
     <StackLayout
         x:Name="content"
@@ -21,7 +21,7 @@
             </ListView.ItemTemplate>
         </ListView>
     </StackLayout>
-    
+
     <!--This is a layout which will contain action elements like buttons-->
     <StackLayout
         x:Name="actions"
@@ -34,7 +34,13 @@
             WidthRequest="48"
             HeightRequest="48"
             BackgroundColor="Transparent"
-            Image="ic_add_box_black_48dp.png" 
-            Clicked="addNewItem_button_Clicked"/>
+            Clicked="addNewItem_button_Clicked">
+            <Button.Image>
+                <OnPlatform x:TypeArguments="FileImageSource"
+    Android="ic_add_box_black_48dp.png"
+    WinPhone="Assets/ic_add_box_black_24dp.png" />
+            </Button.Image>
+
+        </Button>
     </StackLayout>
 </ContentPage>
