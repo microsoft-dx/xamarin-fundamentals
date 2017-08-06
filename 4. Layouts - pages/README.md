@@ -17,21 +17,24 @@ From all the available layouts, more often used are:
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:MobileDemo"
              x:Class="MobileDemo.MainPage"
-             BackgroundColor="WhiteSmoke">
-    <!--This layout contains content elements, like lists and text views-->
-    <StackLayout
-        x:Name="content"
-        Orientation="Vertical"
-        MinimumHeightRequest="600"
-        MinimumWidthRequest="200"
-        BackgroundColor="Transparent">
-    </StackLayout>
-    
-    <!--This is a layout which will contain action elements like buttons-->
-    <StackLayout
-        x:Name="actions"
-        Orientation="Vertical">
-    </StackLayout>
+             BackgroundColor="WhiteSmoke"
+             Title="This is my shopping list app!">
+    <Grid>
+        <!--This layout contains content elements, like lists and text views-->
+        <StackLayout
+            x:Name="content"
+            Orientation="Vertical"
+            MinimumHeightRequest="600"
+            MinimumWidthRequest="200"
+            BackgroundColor="Transparent">
+        </StackLayout>
+
+        <!--This is a layout which will contain action elements like buttons-->
+        <StackLayout
+            x:Name="actions"
+            Orientation="Vertical">
+        </StackLayout>
+    </Grid>
 </ContentPage>
 ```
 Notice that two StackLayouts are used for the two main parts of the page:
