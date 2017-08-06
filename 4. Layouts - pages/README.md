@@ -1,10 +1,12 @@
-## Application's layouts
+## Module 4: Layouts & pages
+
+### Application's layouts
 [Layouts](https://developer.xamarin.com/guides/xamarin-forms/user-interface/controls/layouts/) are the very first level of an application's UI, being the base on which elements are being added - a container which holds all the elements and orders them.
-Depending on the application needed to be created, one or more layouts are being added to the [xaml](https://msdn.microsoft.com/en-us/library/cc295302.aspx) file. 
+Depending on the application needed to be created, one or more layouts are being added to the [XAML](https://msdn.microsoft.com/en-us/library/cc295302.aspx) file. 
 From all the available layouts, more often used are:
 - the [Grid](https://developer.xamarin.com/api/type/Xamarin.Forms.Grid/) which allows the developer to create rows and columns in the current view and add elements in them and therefore create a table-like view.
 - the [ScrollView](https://developer.xamarin.com/api/type/Xamarin.Forms.ScrollView/) which provides a scrollable view by arranging the elements to their height in the order in which they are added and when exceeding the heights of the device's screen it automatically becomes scrollable;
-- especially important is the [**Stacklayout**](https://developer.xamarin.com/api/type/Xamarin.Forms.StackLayout/) because it provides two kind of orientation of the held elements:
+- especially important is the [**StackLayout**](https://developer.xamarin.com/api/type/Xamarin.Forms.StackLayout/) because it provides two kind of orientation of the held elements:
   - vertical: aligning the elements from the upper side of the screen to the lower side, in the exact order they are added in the layout. 
   - horizontal: in which the elements are being aligned from left to right also in the same order from the layout.
 
@@ -44,8 +46,8 @@ Note that it is not necessary to have only one layout in a page - remember, a pa
 
 ## Application's pages
 A mobile application can have one or more [pages](https://developer.xamarin.com/guides/xamarin-forms/user-interface/controls/pages/) - these depend on the complexity of the application but also on the desired user experience. Considering this, pages can be of multiple types, among which worth mentioning:
-- [Content pages](https://developer.xamarin.com/api/type/Xamarin.Forms.ContentPage/) - basic content-like page which allows elements to be oriented by the suer.
-- [Navigation pages](https://developer.xamarin.com/api/type/Xamarin.Forms.NavigationPage/) which allow each device's native workflow (sliding on Windows Phone and Android or buttons navigation on iOS - see Whatsapp, for example).
+- [Content pages](https://developer.xamarin.com/api/type/Xamarin.Forms.ContentPage/) - basic content-like page which allows elements to be oriented by the user.
+- [Navigation pages](https://developer.xamarin.com/api/type/Xamarin.Forms.NavigationPage/) which allow each device's native workflow (sliding on Windows Phone and Android or buttons navigation on iOS - see WhatsApp, for example).
 
 
 ## Navigation through pages
@@ -59,7 +61,34 @@ Make sure to add a new xaml **Content Page** because this type of page already h
 
 <p align="center"><img height="450" alt="New page" src="https://github.com/microsoft-dx/xamarin-fundamentals-ui/blob/master/Images/new-item.PNG?raw=true" margin=auto></p>
 
-The C# file (extensioned .cs) is the back-end implementation of this current page and this part will be covered in tomorrow's Xamarin Forms Back-end part session.
+The C# file (extensioned .cs) is the back-end implementation of this current page and this part will be covered in tomorrow's Xamarin Forms Back-end part session. The current UI structure is:
+
+```
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MobileDemo.NewItem">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+            </Grid>
+            <Entry 
+               x:Name="amountEntry"
+               TextColor="DarkBlue" 
+               Margin="0,0,0,20" 
+               Placeholder="Please insert an item name" 
+               Grid.Column="1" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
+```
 
 
 ### Your turn
