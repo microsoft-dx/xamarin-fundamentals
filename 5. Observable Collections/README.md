@@ -85,13 +85,13 @@ public partial class MainPage : ContentPage
             new ShoppingItem { ItemId = 4, ItemName = "item4"}
 	    };
 
-        this.ShoppingItemsList = contentForList;
+        this.ShoppingItemsList = new contentForList;
     }
 
     private void contentListView_ItemTapped(object sender, ItemTappedEventArgs e)
     {
          var item = (sender as ListView).SelectedItem as ShoppingItem;
-         var index = this.ShoppingItems
+         var index = this.ShoppingItemsList
 			 .IndexOf(item);
 
          this.ShoppingItemsList.RemoveAt(this.ShoppingItemsList.IndexOf(item));
@@ -145,7 +145,7 @@ public partial class MainPage : ContentPage
             new ShoppingItem { ItemId = 4, ItemName = "item4"}
 	    };
 
-        this.ShoppingItems = contentForCollection;
+        this.ShoppingItems = new ObservableCollection<ShoppingItem>(contentForCollection);
     }
 
     private void contentListView_ItemTapped(object sender, ItemTappedEventArgs e)
