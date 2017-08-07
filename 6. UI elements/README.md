@@ -30,16 +30,6 @@ A button has three main properties that need to be set in order to implement a f
 - either a name or an icon, so the user understand what does the button do;
 - a [clicked event handler](https://developer.xamarin.com/api/type/Xamarin.Forms.Button/) which is a method implemented in the back-end which will be disscused in the Back-end part of this course.
 
-## ListView
-In this application's case, a very important element is the actual shopping items list, which was created using a [ListView](https://developer.xamarin.com/guides/xamarin-forms/user-interface/listview/) which is a list of cells - cells containing text and/or icons or other elements.
-
-As said, a ListView is formed of cells, which can be [ImageCells](https://developer.xamarin.com/guides/xamarin-forms/user-interface/listview/customizing-cell-appearance/#ImageCell), [TextCells](https://developer.xamarin.com/guides/xamarin-forms/user-interface/listview/customizing-cell-appearance/#TextCell) or [CustomCells](https://developer.xamarin.com/guides/xamarin-forms/user-interface/listview/customizing-cell-appearance/#Custom_Cells) that will definately suit each developer's needs. And as it is a native element, each platform has its custom ListView style:
-<p align="center"><img height="200" alt="Icons" src="https://github.com/microsoft-dx/xamarin-fundamentals-ui/blob/master/Images/listview.png?raw=true" margin=auto></p>
-
-[Image source](https://blog.xamarin.com/wp-content/uploads/2014/06/ListView-With-Monkeys.png)
-
-More details about this will be given tomorrow as the whole implementation of this List needs back-up support.
-
 
 ## Icons
 Though are not a specific element used in Xamarin Forms mobile development, icons are used (and have been in this course, too) used to give an image to buttons or ListViews and therefore need a mention.
