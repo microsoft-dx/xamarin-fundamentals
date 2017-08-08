@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MobileDemo.NewItem">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+            </Grid>
+            <Entry 
+               x:Name="amountEntry"
+               TextColor="DarkBlue" 
+               Margin="0,0,0,20" 
+               Placeholder="Please insert an item name" 
+               Grid.Column="1" />
+            <Button 
+                x:Name="addNewItem_button"
+                HorizontalOptions="Center" 
+                VerticalOptions="CenterAndExpand" 
+                Margin="0,0,0,10"
+                WidthRequest="48"
+                HeightRequest="48"
+                BackgroundColor="Transparent"
+                Clicked="addNewItem_button_Clicked">
+                <Button.Image>
+                    <OnPlatform 
+                        x:TypeArguments="FileImageSource"
+                        Android="ic_add_box_black_24dp.png"
+                        iOS="ic_add_box_black_24dp.png"
+                        WinPhone="Assets\ic_add_box_black_24dp.png" />
+                </Button.Image>
+            </Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
