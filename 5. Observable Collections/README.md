@@ -83,18 +83,16 @@ public partial class MainPage : ContentPage
             new ShoppingItem { ItemId = 2, ItemName = "item2"},
             new ShoppingItem { ItemId = 3, ItemName = "item3"},
             new ShoppingItem { ItemId = 4, ItemName = "item4"}
-	    };
+        };
 
-        this.ShoppingItemsList = new contentForList;
+        this.ShoppingItemsList = contentForList;
     }
 
     private void contentListView_ItemTapped(object sender, ItemTappedEventArgs e)
     {
-         var item = (sender as ListView).SelectedItem as ShoppingItem;
-         var index = this.ShoppingItemsList
-			 .IndexOf(item);
+        var item = (sender as ListView).SelectedItem as ShoppingItem;
 
-         this.ShoppingItemsList.RemoveAt(this.ShoppingItemsList.IndexOf(item));
+        this.ShoppingItemsList.RemoveAt(this.ShoppingItemsList.IndexOf(item));
     }
 }
 ```
@@ -137,24 +135,22 @@ public partial class MainPage : ContentPage
     private void InitializeItems()
     {
         //TODO This will be populated from the database
-        var contentForCollection= new List<ShoppingItem>
+        var contentForCollection = new List<ShoppingItem>
         {
             new ShoppingItem { ItemId = 1, ItemName = "item1"},
             new ShoppingItem { ItemId = 2, ItemName = "item2"},
             new ShoppingItem { ItemId = 3, ItemName = "item3"},
             new ShoppingItem { ItemId = 4, ItemName = "item4"}
-	    };
+        };
 
         this.ShoppingItems = new ObservableCollection<ShoppingItem>(contentForCollection);
     }
 
     private void contentListView_ItemTapped(object sender, ItemTappedEventArgs e)
     {
-         var item = (sender as ListView).SelectedItem as ShoppingItem;
-         var index = this.ShoppingItems
-             .IndexOf(item);
+        var item = (sender as ListView).SelectedItem as ShoppingItem;
 
-         this.ShoppingItems.RemoveAt(this.ShoppingItems.IndexOf(item));
+        this.ShoppingItems.RemoveAt(this.ShoppingItems.IndexOf(item));
     }
 }
 ```
