@@ -1,12 +1,22 @@
+
 ## Module 4: Layouts & pages
 
+### Introduction
+Xamarin.Forms Layouts are used to compose user-interface controls into visual structures. They are visual elements but often none of them is actually seen (however we can use their properties to set background easier), what can be observed is the way the elements can be arranged trough them.
+
+![enter image description here](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/controls/layouts-images/layouts-sml.png)
+
+### Types of Layouts
+Based of the number of children we can split them into 2 categories:
+- Layouts with a single children: ContentView, Frame (usually used for its border), ScrollView, TemplatedView (the basic view) and ContentPresenter
+- Layouts with multiple children: StackLayout, Grid, AbsoluteLayout, RelativeLayout and FlexLayout
+
 ### Application's layouts
-[Layouts](https://developer.xamarin.com/guides/xamarin-forms/user-interface/controls/layouts/) are the very first level of an application's UI, being the base on which elements are being added - a container which holds all the elements and orders them.
-Depending on the application needed to be created, one or more layouts are being added to the [XAML](https://msdn.microsoft.com/en-us/library/cc295302.aspx) file. 
+[Layouts](https://developer.xamarin.com/guides/xamarin-forms/user-interface/controls/layouts/) are the very first structural level of an application's UI, being the base on which elements are being added - a container which holds all the elements and orders them. Depending on the application needed to be created, one or more layouts are being added to the [XAML](https://msdn.microsoft.com/en-us/library/cc295302.aspx) file. Those can be also get generated in the code, it is really a matter of taste.
 From all the available layouts, more often used are:
-- the [Grid](https://developer.xamarin.com/api/type/Xamarin.Forms.Grid/) which allows the developer to create rows and columns in the current view and add elements in them and therefore create a table-like view.
-- the [ScrollView](https://developer.xamarin.com/api/type/Xamarin.Forms.ScrollView/) which provides a scrollable view by arranging the elements to their height in the order in which they are added and when exceeding the heights of the device's screen it automatically becomes scrollable;
-- especially important is the [**StackLayout**](https://developer.xamarin.com/api/type/Xamarin.Forms.StackLayout/) because it provides two kind of orientation of the held elements:
+- [Grid](https://developer.xamarin.com/api/type/Xamarin.Forms.Grid/), a layout which allows the developer to create rows and columns in the current view and add elements in them and therefore create a table-like view.
+-[ScrollView](https://developer.xamarin.com/api/type/Xamarin.Forms.ScrollView/), which provides a scrollable view by arranging the elements to their height in the order in which they are added and when exceeding the heights of the device's screen it automatically becomes scrollable;
+- [**StackLayout**](https://developer.xamarin.com/api/type/Xamarin.Forms.StackLayout/) is the most widely used layout because it provides two kind of orientation of the held elements:
   - vertical: aligning the elements from the upper side of the screen to the lower side, in the exact order they are added in the layout. 
   - horizontal: in which the elements are being aligned from left to right also in the same order from the layout.
 
@@ -64,7 +74,7 @@ Make sure to add a new xaml **Content Page** because this type of page already h
 
 <p align="center"><img height="450" alt="New page" src="https://github.com/microsoft-dx/xamarin-fundamentals-ui/blob/master/Images/new-item.PNG?raw=true" margin=auto></p>
 
-The C# file (extensioned .cs) is the back-end implementation of this current page and this part will be covered in tomorrow's Xamarin Forms Back-end part session. The current UI structure is:
+The C# file (\<FileName>.cs) is the back-end implementation of this current page and this part will be covered in tomorrow's Xamarin Forms Back-end part session. The current UI structure is:
 
 ```
 <?xml version="1.0" encoding="utf-8" ?>
@@ -95,4 +105,4 @@ The C# file (extensioned .cs) is the back-end implementation of this current pag
 
 
 ### Your turn
-What do you think should this page's scheleton be? A StackLayout or maybe a GridLayout? Have a discussion about this with the instructor.
+What do you think should this page's code be? A StackLayout or maybe a GridLayout? Have a discussion about this with the instructor.
