@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MobileDemo.NewItem"
+             BackgroundColor="WhiteSmoke"
+             Title="This is my shopping list app!">
+    <ContentPage.Content>
+        <!-- Here we have a stack layout that contains a grid and an entry -->
+        <StackLayout Orientation="Vertical">
+            <!-- The Grid has 2 columns and 1 row, have fun -->
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+            </Grid>
+            <Entry 
+               x:Name="amountEntry"
+               TextColor="DarkBlue" 
+               Margin="0,0,0,20" 
+               Placeholder="Please insert an item name" 
+               Grid.Column="1" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

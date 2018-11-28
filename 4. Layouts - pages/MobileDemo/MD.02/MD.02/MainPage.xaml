@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:MD._02"
+             x:Class="MD._02.MainPage"
+             BackgroundColor="WhiteSmoke"
+             Title="This is my shopping list app!">
+
+    <Grid>
+        <!--This layout contains content elements, like lists and text views-->
+        <StackLayout
+            x:Name="ContentStack"
+            Orientation="Vertical"
+            MinimumHeightRequest="600"
+            MinimumWidthRequest="200"
+            BackgroundColor="Transparent">
+        </StackLayout>
+
+        <!--This is a layout which will contain action elements like buttons-->
+        <StackLayout
+            x:Name="ActionStack"
+            Orientation="Horizontal">
+        </StackLayout>
+    </Grid>
+
+</ContentPage>
