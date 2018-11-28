@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:MD._01"
+             x:Class="MD._01.MainPage">
+
+    <StackLayout x:Name="PageContent">
+        <!-- Place new controls here -->
+        <Button x:Name="ButtonForEverybody"
+            Text="Click Me!"
+            HorizontalOptions="End"
+            VerticalOptions="Center" 
+            Clicked="ChangeText"/>
+        <Frame HeightRequest="50"/>
+        <Label x:Name ="DisplayMessage" 
+           Text="Hi, I am not a lefty" 
+           HorizontalTextAlignment="Center"
+           VerticalTextAlignment="Center" />
+        <Button Text="Change Hand"
+            HorizontalOptions="Center" 
+            VerticalOptions="Center" 
+            Clicked="ChangeButtonPosition" />
+        <!-- You can place them also here or in the middle-->
+    </StackLayout>
+
+</ContentPage>
