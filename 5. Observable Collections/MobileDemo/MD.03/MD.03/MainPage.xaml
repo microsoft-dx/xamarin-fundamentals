@@ -5,32 +5,36 @@
              x:Class="MD._03.MainPage"
              BackgroundColor="WhiteSmoke"
              Title="This is my shopping list app!">
-    <Grid>
-        <!--This layout contains content elements, like lists and text views-->
+    <!--This layout contains content elements, like lists and text views-->
+    <StackLayout>
+        <!--This is a layout which will contain action elements like buttons-->
         <StackLayout
-            x:Name="content"
-            Orientation="Vertical"
-            MinimumHeightRequest="600"
-            MinimumWidthRequest="200"
-            BackgroundColor="Transparent">
-            <ListView x:Name="ContentListView" ItemTapped="ContentListView_ItemTapped">
+            x:Name="actions"
+            Orientation="Horizontal"
+            HorizontalOptions="Center">
+            <Button Text="Add New Item" Clicked="AddNewItem" />
+            <Button Text="Remove Last Item" Clicked="RemoveLastItem" />
+        </StackLayout>
+        
+        <ScrollView>
+            <ListView x:Name="ContentListView">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
-                            <Grid>
-                                <Label Text="{Binding ItemId}" IsVisible="False" />
-                                <Label Text="{Binding ItemName}" />
-                            </Grid>
+                            <Frame CornerRadius="20" BackgroundColor="White" BorderColor="Black" WidthRequest="200">
+                                <StackLayout WidthRequest="200">
+                                    <Label Text="{Binding ItemId}" IsVisible="False" />
+                                    <Label Text="{Binding ItemName}" 
+                                           FontFamily="Arial" 
+                                           FontSize="Medium" 
+                                           HorizontalOptions="Center"
+                                           TextColor="Black"/>
+                                </StackLayout>
+                            </Frame>
                         </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
-        </StackLayout>
-
-        <!--This is a layout which will contain action elements like buttons-->
-        <StackLayout
-            x:Name="actions"
-            Orientation="Vertical">
-        </StackLayout>
-    </Grid>
+        </ScrollView>
+    </StackLayout>
 </ContentPage>
