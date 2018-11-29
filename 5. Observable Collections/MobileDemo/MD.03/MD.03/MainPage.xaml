@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:MobileDemo"
-             x:Class="MobileDemo.MainPage"
+             xmlns:local="clr-namespace:MD._03"
+             x:Class="MD._03.MainPage"
              BackgroundColor="WhiteSmoke"
              Title="This is my shopping list app!">
     <Grid>
@@ -13,7 +13,7 @@
             MinimumHeightRequest="600"
             MinimumWidthRequest="200"
             BackgroundColor="Transparent">
-            <ListView x:Name="contentListView" ItemTapped="ContentListView_ItemTapped">
+            <ListView x:Name="ContentListView" ItemTapped="ContentListView_ItemTapped">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
@@ -33,5 +33,4 @@
             Orientation="Vertical">
         </StackLayout>
     </Grid>
-
 </ContentPage>

@@ -1,9 +1,9 @@
-﻿using System.Collections.Generic;
+﻿using MD._03.Models;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using MobileDemo.Models;
 using Xamarin.Forms;
 
-namespace MobileDemo
+namespace MD._03
 {
     public partial class MainPage : ContentPage
     {
@@ -16,7 +16,7 @@ namespace MobileDemo
             InitializeComponent();
             InitializeItems();
 
-            contentListView.ItemsSource = ShoppingItems;
+            ContentListView.ItemsSource = ShoppingItems;
             //contentListView.ItemsSource = ShoppingItemsList;
         }
 
