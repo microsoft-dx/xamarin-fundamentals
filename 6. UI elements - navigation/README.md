@@ -1,3 +1,4 @@
+
 ## Module 6: User Interface elements & navigation
 
 ### User Interface native elements
@@ -9,7 +10,7 @@ _What does this button do?_
 
 [Image source](https://codepen.io/g13nn/pen/yqiDG/image/large.png)
 
-Ever sincer Dexter's sister Dee Dee started pushing buttons in her brother's laboratory, people started to _experience_ pushing buttons, having already in their subconscious that something would (or at least should) happen.
+Ever since Dexter's sister Dee Dee started pushing buttons in her brother's laboratory, people started to _experience_ pushing buttons, having already in their subconscious that something would (or at least should) happen.
 
 In terms of mobile applications, buttons are used generally to submit or enter data - any user would first complete some text entries and push a button after, expecting for that data to be added.
 
@@ -18,7 +19,7 @@ In the shopping list application, it was previously mentioned that the MainPage 
 A button has three main properties that need to be set in order to implement a functionality:
 - an ID (using the Name property), just like all other elements;
 - either a name or an icon, so the user understand what does the button do;
-- a [clicked event handler](https://developer.xamarin.com/api/type/Xamarin.Forms.Button/) which is a method implemented in the back-end which will be disscused in the Back-end part of this course.
+- a [clicked event handler](https://developer.xamarin.com/api/type/Xamarin.Forms.Button/) which is a method implemented in the back-end which will be discussed in the Back-end part of this course.
 
 ```cs
 <Button 
@@ -37,40 +38,30 @@ We will now run the *UWP* project and see that the button is displayed but no im
 
 ### Icons
 Though are not a specific element used in Xamarin Forms mobile development, icons are used (and have been in this course, too) used to give an image to buttons or ListViews and therefore need a mention.
-When using Visual Studio, all the elements need to be added in the project - images, too - and as all used icons are present as images those were added on all the drawable dimensions.
-The Resource drawable folders are named this way because a version of the icon is needed for all sizes of the mobile devices, there fore the specific icon needs to be included in the proejects files on all mobile platforms, just like below:
+When using Visual Studio, all the elements need to be added in the project - images, too - and as all used icons are present as images those were added on all the draw-able dimensions.
+The Resource drawable folders are named this way because a version of the icon is needed for all sizes of the mobile devices, there fore the specific icon needs to be included in the project files on all mobile platforms, just like below:
 <p align="center"><img height="350" alt="Icons" src="https://github.com/microsoft-dx/xamarin-fundamentals-ui/blob/master/Images/android-icons.PNG?raw=true" margin=auto></p>
 
 A great icons website is [material.io](https://material.io/icons/) which also provides icons on various dimensions and file formats. The images we will be using are [this one](https://github.com/microsoft-dx/xamarin-fundamentals/blob/master/Images/ic_add_box_black_48dp.png) and [this one](https://github.com/microsoft-dx/xamarin-fundamentals/blob/master/Images/ic_add_box_black_24dp.png) from [material.io](https://material.io/icons/) which we will copy in the `Assets` folder and run the UWP project. Try now to run the Android project, does it work? It doesn't because the image assets are copied to a whole other folder in the Android project (the same applies for iOS).
 
-### **OnPlatform** XAML tag
-So now the problem is, how do we display a custom image depending on the platform we are in. One way would be using `preprocessor directives` in the PCL .NETStandard project to decide the platform we are in, and depending on which variables are set we can set a custom property to the platform specific image path, as done [here](https://developer.xamarin.com/guides/cross-platform/application_fundamentals/building_cross_platform_applications/part_4_-_platform_divergence_abstraction_divergent_implementation/#Divergent_Implementation). This is way too complicated and we want a simpler way that works.
+### Device.RuntimePlatform
+As you know there are 3 main platforms:
 
-We can and will use the [OnPlatform](https://developer.xamarin.com/api/type/Xamarin.Forms.OnPlatform%3CT%3E/) tag which will render platform specific image paths, depending on the mobile application context. Firstly, we need to copy the two pictures:
-* into each `drawable-*` folder for the `Android` project
-* into the `Resources` folder for the `iOS` project
-* into the `Assets` folder of the `UWP` project
+ - Android
+ - iOS
+ - UWP
 
-We will update our button with the following code:
-```cs
-<Button 
-    x:Name="addNewItem_button"
-    HorizontalOptions="Center" 
-    VerticalOptions="CenterAndExpand" 
-    Margin="0,0,0,10"
-    WidthRequest="48"
-    HeightRequest="48"
-    BackgroundColor="Transparent"
-    Clicked="addNewItem_button_Clicked">
-    <Button.Image>
-        <OnPlatform 
-            x:TypeArguments="FileImageSource"
-            Android="ic_add_box_black_48dp.png"
-            iOS="ic_add_box_black_24dp.png"
-            WinPhone="Assets\ic_add_box_black_24dp.png" />
-    </Button.Image>
-</Button>
-```
+Depending on which one you the application is currently running the resources or behavior might differ. Those being said, for a resource we might want to check the platform.
+
+For example:
+
+     // The source depends on the Platforms
+            string imageSource = 
+	            Device.RuntimePlatform == Device.UWP ? 
+	            "Assets\\glossy-black-circle-button-md.png" : 
+	            "glossy-black-circle-button-md.png";
+
+            MainStack.Children.Add(new Image { Source = imageSource });
 
 ### Events and delegates
 
@@ -86,7 +77,7 @@ We will update our button with the following code:
 
 [More on the official MSDN documentation](https://msdn.microsoft.com/en-us/library/awbftdfh.aspx)
 
-### Enable navigation with ContentPages
+### Enable navigation with ContentPage
 All we have to do to enable navigation, is to instantiate the `MainPage` into a navigation context. To do that, we will pass the `MainPage` instance to a `NavigationPage` instance, in the `App.xaml.cs` file like this:
 
 ```cs
