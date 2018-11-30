@@ -8,7 +8,7 @@
 This is what this module intends to focus on. You can do one single application that works on every device (Windows 10, Android, iOS/macOS [currently in beta :sweat_smile:]) and you can run native applications on all the devices.
 
 ## Cross platform applications
-A cross-platform application is a mobile application that can be used on each mobile opperating system - Android, iOS or UWP - having the same results on each platform but by using the native elements from each platform.
+A cross-platform application is a mobile application that can be used on multiple operating systems - Android, iOS or UWP - with the same results on each platform, but using the native elements from each platform.
 For example, lets have a look at these text entries:
 ![Code Example](https://github.com/microsoft-dx/xamarin-fundamentals-ui/blob/master/Images/xamarin-entry.png?raw=true)
 
@@ -16,10 +16,10 @@ For example, lets have a look at these text entries:
 
 As you can notice, these elements have the exact same behaviour and data expected, yet still they are different on each platform and are exactly the same as you have previously seen in other applications' text entries on either one of those platforms.
 
-Xamarin provides the developer the possibility of creating a cross-platform Visual Studio project that builds the application for each used platform.
+Xamarin provides the developer with the possibility of creating a cross-platform Visual Studio project that builds the application for each used platform.
 
 ### How it works
-With Xamarin development it is really all about productivity and time-efficiency or in other words cross-platform code:
+With Xamarin, development is really all about productivity and time-efficiency, or in other words, cross-platform code:
 
 - As a mobile application shows data, on the back-end part, C# provides the core’s cross-platform code that modelates the data shown in the user interface.
 - As the back-end part is created using C# which provides the core’s cross-platform functionality, the UI (User Interface) is created using XAML, which is **a declarative markup language** - meaning that the code is written in the same order as the developers want to use it;
@@ -48,29 +48,33 @@ TODO :sweat_smile:
 
 ## First Xamarin Project
 
-1. Open Visual Studio and create a new Project and on the left side select **Visual C#**.
+1. Open Visual Studio and create a new Project and on the left side select **Visual C#**, and then **Cross-Platform**.
 
-![New project](https://github.com/microsoft-dx/xamarin-fundamentals-ui/blob/master/Images/new-project.PNG?raw=true)
+![xamarin forms](https://user-images.githubusercontent.com/23138335/49178094-842c4c00-f357-11e8-88e7-568d6d7b244f.PNG)
 
-2. Make sure you create a __Cross Platform App (Xamarin)__ by selecting it.
-3. Have Visual Studio create a **Blank App** using **Xamarin Forms** and also make sure you use **Portable Class Library (PCL)** as Code Sharing Strategy.
+2. Select the **Xamarin.Forms Mobile App** and create a **Blank App**. You can now choose which platforms to include in your project (Android, iOS, UWP).
+
+![blank](https://user-images.githubusercontent.com/23138335/49178360-3d8b2180-f358-11e8-8cc7-89675354219f.PNG)
+
+
 
 ## The project explained
 
 As you can see, the are many subsections as it follows: 
 
-1. MobileDemo containing: App.cs (the fundamental Class for a Xamarin Project) and MainPage which is the page that get rendered when the application is fired up
-2. MobileDemo.Android containing all the files Required for Android's side of the App.
-3. MobileDemo.iOS containing all the files Required for iOS's side of the App. 
-4. MobileDemo.UWP, explained in [this blog post](https://laurentiu.microsoft.pub.ro/2016/04/03/hello-universal-windows-platform/)
+1. My-first-app containing: App.xaml (App.xaml.cs is the fundamental Class for a Xamarin Project) and MainPage.xaml which is the page that gets rendered when the application is fired up
+2. My-first-app.Android containing all the files Required for Android's side of the App.
+3. My-first-app.iOS containing all the files Required for iOS's side of the App. 
+4. My-first-app.UWP, explained in [this blog post](https://laurentiu.microsoft.pub.ro/2016/04/03/hello-universal-windows-platform/)
 
-![Solution explorer](https://github.com/microsoft-dx/xamarin-fundamentals-ui/blob/master/Images/solution_explorer.PNG?raw=true)
+![image](https://user-images.githubusercontent.com/23138335/49178562-be4a1d80-f358-11e8-86e0-5c3b090319c0.png)
+
 
 We will set the UWP project as the default executing project and hit F5. We now created our first Xamarin PCL application.
 
 #### Remarks
-- as Xamarin development is possible only using an Xamarin-compatible IDE, this project will be created in [Visual Studio](https://www.visualstudio.com/).
-- keep in mind that you can also use [Xamarin Studio](https://developer.xamarin.com/guides/cross-platform/xamarin-studio/) but all the modules in this course will have instructions available for Visual Studio only.
+- as Xamarin development is possible only using a Xamarin-compatible IDE, this project will be created in [Visual Studio](https://www.visualstudio.com/).
+- keep in mind that you can also use [Xamarin Studio](https://developer.xamarin.com/guides/cross-platform/xamarin-studio/), but all the modules in this course will have instructions available for Visual Studio only.
 
 ## In conclusion
 
