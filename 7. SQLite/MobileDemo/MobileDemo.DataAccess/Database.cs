@@ -1,72 +1,53 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
+using System.IO;
 using System.Threading.Tasks;
-using MobileDemo.DataAccess.Entities;
-using Plugin.NetStandardStorage;
-using Plugin.NetStandardStorage.Abstractions.Types;
+using DataAccessLayer.Entities;
 using SQLite;
 
-namespace MobileDemo.DataAccess
+namespace DataAccessLayer
 {
     public partial class Database
     {
-        #region Singleton
-
-        private static Database _instance = null;
+        private static Database database;
+        private static SQLiteAsyncConnection _connection;
 
         public static Database Instance
         {
             get
             {
-                if (_instance == null)
+                if (database == null)
                 {
-                    _instance = new Database();
+                    database = new Database(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "ShoppingItem.db3"));
                 }
 
-                return _instance;
+                return database;
             }
         }
 
-        private Database()
+        private Database(string dbPath)
         {
-
+            _connection = new SQLiteAsyncConnection(dbPath);
+            _connection.CreateTableAsync<ShoppingItem>().Wait();
+        }
+        public Task<List<ShoppingItem>> GetItemsAsync()
+        {
+            return _connection.Table<ShoppingItem>().OrderBy(x => x.ItemId).ToListAsync();
         }
 
-        #endregion
-
-        private string DatabasePath = null;
-
-        private void CreateTables()
+        public Task<ShoppingItem> GetItemAsync(int id)
         {
-            using (var dbContext = Database.Instance.GetConnection())
-            {
-                dbContext.CreateTable<ShoppingItem>();
-            }
+            return _connection.Table<ShoppingItem>().Where(i => i.ItemId == id).FirstOrDefaultAsync();
         }
 
-        public void InitializeDatabase()
+        public Task<int> InsertItemAsync(ShoppingItem item)
         {
-            var task = Task.Run(() =>
-            {
-                var db = CrossStorage.FileSystem.LocalStorage.CreateFile(
-                    "xamarin-fundamentals.db",
-                    CreationCollisionOption.OpenIfExists);
-
-                return db.FullPath;
-            });
-
-            task.Wait();
-
-            this.DatabasePath = task.Result;
-
-
-            this.CreateTables();
+            return _connection.InsertAsync(item);
         }
 
-        public SQLiteConnection GetConnection()
+        public Task<int> DeleteItemAsync(ShoppingItem item)
         {
-            return new SQLiteConnection(this.DatabasePath);
+            return _connection.DeleteAsync(item);
         }
     }
 }

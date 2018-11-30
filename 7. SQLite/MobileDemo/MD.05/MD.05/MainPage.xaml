@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:MD._04"
+             x:Class="MD._05.MainPage"
+             BackgroundColor="WhiteSmoke"
+             Title="This is my shopping list app!">
+    <!--This layout contains content elements, like lists and text views-->
+    <StackLayout x:Name="MainStack">
+        <!--This is a layout which will contain action elements like buttons-->
+        <StackLayout
+            x:Name="actions"
+            Orientation="Horizontal"
+            HorizontalOptions="Center">
+            <Button x:Name="AddNewItemButton" Text="Add New Item" Clicked="AddNewItem"/>
+            <Button x:Name="RemoveItemButton" Text="Remove Last Item" Clicked="RemoveLastItem" />
+        </StackLayout>
+
+        <ScrollView>
+            <ListView x:Name="ContentListView" ItemTapped="ContentListView_ItemTapped">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Frame CornerRadius="20" BackgroundColor="White" BorderColor="Black" WidthRequest="200">
+                                <StackLayout WidthRequest="200">
+                                    <Label Text="{Binding ItemId}" IsVisible="False" />
+                                    <Label Text="{Binding ItemName}" 
+                                           FontFamily="Arial" 
+                                           FontSize="Medium" 
+                                           HorizontalOptions="Center"
+                                           TextColor="Black"/>
+                                </StackLayout>
+                            </Frame>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </ScrollView>
+    </StackLayout>
+</ContentPage>

@@ -1,3 +1,4 @@
+
 ## Module 7: SQLite
 
 ### What is SQLite
@@ -25,7 +26,7 @@ The installation process is the same, right click on the solution, click on `Man
 We can now start building the Database Access Layer :bow_tie:
 
 ### Database Access Layer
-We talked in the previous modules that .NETStandard resolves the problem of duplicating code depending on the platform you target and as an explame we used a Database Access Layer (will use DAL), so why not stand by our word and implement the DAL targeting the .NETStandard? We will add a new library project by `right clicking the solution` > `Add` > `New project...`, as seen below
+We talked in the previous modules that .NETStandard resolves the problem of duplicating code depending on the platform you target and as an example we used a Database Access Layer (will use DAL), so why not stand by our word and implement the DAL targeting the .NETStandard? We will add a new library project by `right clicking the solution` > `Add` > `New project...`, as seen below
 
 ![netstandard-class-library](https://github.com/microsoft-dx/xamarin-fundamentals-ui/blob/master/Images/netstandard-class-library.png?raw=true)
 
@@ -36,7 +37,7 @@ We will name the project `MobileDemo.DataAccess` to maintain the consistency of 
 After we have everything set-up, we can start and implement our custom functionality.
 
 #### Entities
-An entity is the abstractization of data that comes from a database context in a certain form. We will create a `ShoppingItem` class which will act as an entity which we will use when fetching or updating data from the database. In our case, the database is using a Code-First approach, meaning that we first create our abstractization in the code and after that we push it to create the database tables with specific tables and other confiuration settings. To maintain consistency, we will create a folder called `Entities` in the .NETStandard project and put our `ShoppingItem` class inside it:
+An entity is the abstraction of data that comes from a database context in a certain form. We will create a `ShoppingItem` class which will act as an entity which we will use when fetching or updating data from the database. In our case, the database is using a Code-First approach, meaning that we first create our abstraction in the code and after that we push it to create the database tables with specific tables and other configuration settings. To maintain consistency, we will create a folder called `Entities` in the .NETStandard project and put our `ShoppingItem` class inside it:
 
 ```cs
 public class ShoppingItem
