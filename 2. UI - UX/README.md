@@ -28,7 +28,4 @@ As you can see, all the _business analysis_, _user # researchability_ and variou
 <p align="center"><img width="500"  alt="UI UX"  src="https://github.com/microsoft-dx/xamarin-fundamentals-ui/blob/master/Images/ux-ui.jpg?raw=true"  margin=auto></p>
 Which bottle would you choose?
 
-[Image source](hhttps://cdn-images-1.medium.com/max/800/1*Cl3Fk9iEFz9ZKhvaSVgqpA.jpeg)
-
-
-Which bottle would you choose?
+[Image source](https://cdn-images-1.medium.com/max/800/1*Cl3Fk9iEFz9ZKhvaSVgqpA.jpeg)
