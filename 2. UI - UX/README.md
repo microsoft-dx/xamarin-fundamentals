@@ -25,7 +25,7 @@ As you can see, all the _business analysis_, _user # researchability_ and variou
 
 ####  If you are still not sure what the difference is please see the below [rough](https://medium.com/northern-dynamics/my-response-to-ketchup-bottle-ux-vs-ui-meme-56c1a14a6f98) but pretty good for a start analogy:
 
-<p align="center"><img width="500"  alt="UI UX"  src="https://github.com/microsoft-dx/xamarin-fundamentals-ui/blob/master/Images/ux-ui.jpg?raw=true"  margin=auto></p>
+![ui-ux](../Images/ui-vs-ux.jpg)
 Which bottle would you choose?
 
 [Image source](https://cdn-images-1.medium.com/max/800/1*Cl3Fk9iEFz9ZKhvaSVgqpA.jpeg)
