@@ -53,7 +53,9 @@ Notice that two StackLayouts are used for the two main parts of the page:
 
 ### Multiple layouts
 Note that it is not necessary to have only one layout in a page - remember, a page is not a layout. Therefore, you can add as many layouts as you need and of as many types as you want. For example, here we have a StackLayout that contains one other StackLayout and a TemplatedView. The white StackLayout holds yet another 3 StackLayouts. If this was too hard to grasp, you can take a look at the code below and connect what every bit of it does with the output image.
+
 <p align="center"><img height="300" alt="Crazy layouts" src="../Images/multiple-layouts.png" margin=auto></p>
+
 ```
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
