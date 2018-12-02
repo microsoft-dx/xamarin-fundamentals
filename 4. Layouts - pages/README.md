@@ -52,16 +52,46 @@ Notice that two StackLayouts are used for the two main parts of the page:
 
 
 ### Multiple layouts
-Note that it is not necessary to have only one layout in a page - remember, a page is not a layout. Therefore, you can add as many layouts as you need and of as many types as you want. For example, here we have a StackLayout that contains one other StackLayout, which itself also holds 3 other StackLayouts and a TemplatedView.
-<p align="center"><img height="300" alt="Crazy layouts" src="https://github.com/microsoft-dx/xamarin-fundamentals-ui/blob/master/Images/layouts.png?raw=true" margin=auto></p>
+Note that it is not necessary to have only one layout in a page - remember, a page is not a layout. Therefore, you can add as many layouts as you need and of as many types as you want. For example, here we have a StackLayout that contains one other StackLayout and a TemplatedView. The white StackLayout holds yet another 3 StackLayouts. If this was too hard to grasp, you can take a look at the code below and connect what every bit of it does with the output image.
+```
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:App1"
+             x:Class="App1.MainPage">
 
+    <StackLayout BackgroundColor="Blue"
+                 HeightRequest="450">
+        <Label Text="Welcome to Xamarin.Forms!"
+               HorizontalOptions="Center"
+               VerticalOptions="StartAndExpand"
+               TextColor="White" />
+        <StackLayout BackgroundColor="White"
+                     HeightRequest="350"
+                     TranslationY="-10"
+                     Orientation="Horizontal"
+                     Spacing="5">
+            <StackLayout BackgroundColor="Green"
+                         WidthRequest="50" />
+            <StackLayout BackgroundColor="Red"
+                         WidthRequest="50" />
+            <StackLayout BackgroundColor="Tomato"
+                         WidthRequest="50" 
+                         Opacity="0.5" />
+        </StackLayout>
+        <TemplatedView BackgroundColor="Yellow"
+                       HeightRequest="200"/>
+    </StackLayout>
+</ContentPage>
+```
+<p align="center"><img height="300" alt="Crazy layouts" src="https://github.com/microsoft-dx/xamarin-fundamentals-ui/blob/master/Images/multiple-layouts.png?raw=true" margin=auto></p>
 
 ## Application's pages
 A mobile application can have one or more [pages](https://developer.xamarin.com/guides/xamarin-forms/user-interface/controls/pages/) - these depend on the complexity of the application but also on the desired user experience. Considering this, pages can be of multiple types, among which worth mentioning are:
 - [Content pages](https://developer.xamarin.com/api/type/Xamarin.Forms.ContentPage/) - basic content-like page which allows elements to be oriented by the user.
 - [Navigation pages](https://developer.xamarin.com/api/type/Xamarin.Forms.NavigationPage/) which allow each device's native workflow (sliding on Windows Phone and Android or buttons navigation on iOS - see WhatsApp for example).
 
-What is worth noting is that, contrary to the order in which Layouts and Pages have been introduced here, as can be seen from the code describing the application's structure, Pages are what come first, and Layouts go in them.
+What is worth noting is that, contrary to the order in which Layouts and Pages have been introduced here, as can be seen from the code describing the application's structure, Pages are what come first and Layouts are what goes inside of them.
 
 
 ## Navigation through pages
