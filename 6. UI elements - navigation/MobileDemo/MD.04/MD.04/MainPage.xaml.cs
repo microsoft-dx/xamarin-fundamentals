@@ -15,7 +15,7 @@ namespace MD._04
         public MainPage()
         {
             // The source depends on the Platforms
-            string imageSource = Device.RuntimePlatform == Device.UWP ? "Assets\\glossy-black-circle-button-md.png" : "glossy-black-circle-button-md.png";
+            string imageSource = Device.RuntimePlatform == Device.UWP ? "Assets\\glossy-black-circle-button-md.png" : "glossyblackcirclebuttonmd.png";
             InitializeComponent();
 
             MainStack.Children.Add(new Image { Source = imageSource });
